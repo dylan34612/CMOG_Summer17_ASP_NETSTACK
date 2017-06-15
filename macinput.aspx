@@ -5,6 +5,9 @@
 <!-- HTML HEADER BLOCK -->
 </asp:Content>
 
+
+
+
 <asp:Content ID="Content2" ContentPlaceHolderID="LeftBar" Runat="Server">
 <!-- HTML Left BLOCK -->
     <style>p{ color:black; font-weight:bold; padding-left:2em;} h3{ color:black; font-weight:bold; padding-left:1em;}</style>
@@ -12,11 +15,9 @@
     <h3>Mac Addresses Currently in 3500 Years Gallery</h3>
     <div>
         <%  var clients = request_clients();
-            
-            
-             %>
-        <p>Username: <%=clients%> </p>
-        <p>MacAdresses: </p>
+            %>
+        <p>Straight Response: <%=clients%> </p>
+        <p>Response Length: <%=clients.Content.Length%></p>
         <p>Confidence Factor: </p>
         <p>Connected SSID: </p>
         <p>-------------------------------------------</p>
@@ -24,6 +25,8 @@
      %>
     </div>
 </asp:Content>
+
+
 
 
 
